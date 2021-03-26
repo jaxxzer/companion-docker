@@ -8,8 +8,13 @@ echo $ROOT
 
 VERSION="${VERSION:-master}"
 REMOTE="${REMOTE:-https://raw.githubusercontent.com/bluerobotics/companion-docker}"
-REMOTE="$REMOTE/$VERSION"
-CONFIGURE_BOARD_PATH="$REMOTE/install/boards"
+ROOT="$REMOTE/$VERSION"
+CONFIGURE_BOARD_PATH="$ROOT/install/boards"
+
+echo "two"
+echo $REMOTE
+echo $VERSION
+echo $ROOT
 
 function board_not_detected {
     echo "Hardware not identified in $1, please report back the following line:"
