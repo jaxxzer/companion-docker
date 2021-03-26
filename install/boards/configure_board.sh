@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 
 # Detect and configure hardware for each supported plataform
+echo "one"
+echo $REMOTE
+echo $VERSION
+echo $ROOT
 
 VERSION="${VERSION:-master}"
 REMOTE="${REMOTE:-https://raw.githubusercontent.com/bluerobotics/companion-docker}"
